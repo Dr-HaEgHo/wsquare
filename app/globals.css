@@ -1,21 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input{
+  outline: none;
+  background: none;
+}
+input:focus{
+  outline: none;
+  background: none;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Darker Grotesque";
+}
+
+.cont960{
+  @apply w-[90%] max-w-[960px] mx-auto
+}
+.cont940{
+  @apply w-[90%] max-w-[940px] mx-auto
+}
+
+.thin-border-centered{
+  @apply flex items-center justify-center rounded-full border border-grey1
+}
+.input{
+  @apply w-full border-b text-white text-lg font-normal p-3 lh160 
+}
+
+.nav-btn{
+  @apply w-[58px] h-[58px] flex items-center justify-center border-[0.5px] border-black rounded-full
+}
+
+.lh100{
+  line-height: 100%;
+}
+
+.lh101{
+  line-height: 101.7%;
+}
+.lh151{
+  line-height: 151.7%;
+}
+
+.lh120{
+  line-height: 120%;
+}
+.lh150{
+  line-height: 150%;
+}
+.lh160{
+  line-height: 160%;
+}
+
+.ls1pz{
+  letter-spacing: 1%;
+}
+.ls5pz{
+  letter-spacing: 1%;
+}
+
+
+.card-parent{
+  
+}
+
+.card-parent:hover .card-front{
+  display: none;
+}
+.card-parent:hover .card-back{
+  top: 0%;
+}
+.card-front{
+  animation: growFade .5s ease-in
+}
+
+.card-back{
+  transition: .3s ease-in-out;
+}
+
+.parent:hover .child{
+  opacity: 1;
 }
