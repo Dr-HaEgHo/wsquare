@@ -31,7 +31,7 @@ const images = [
 
 const TechStack = () => {
   return (
-    <div id="#tech-stack" className="w-full bg-white px-[70px] py-[64px] relative z-10">
+    <div id="#tech-stack" className="w-full bg-white px-10 lg:px-[70px] py-[64px] relative z-10">
       <h2 className="text-black text-5xl font-bold mb-[68px] text-center">
         Our Tech Stack
       </h2>

@@ -8,6 +8,7 @@ import React, { FC } from 'react'
   btnClass?: string;
   image?: string;
   children?: React.ReactNode;
+  disabled?: boolean
 }
 
 
@@ -36,9 +37,9 @@ export const OutlinedButton: FC<button> = ({cta, text, pClass, btnClass}) => {
 //   )
 // }
 
-export const FilledButton: FC<button> = ({cta, text, pClass, btnClass, image, children}) => {
+export const FilledButton: FC<button> = ({cta, text, pClass, btnClass, image, children, disabled}) => {
   return (
-    <button onClick={cta} className={`button-filled flex items-center gap-1 ${btnClass}`}>
+    <button disabled={disabled} onClick={cta} className={`button-filled flex items-center gap-1 ${btnClass}`}>
         {
           image && <Image
           src={image as string}

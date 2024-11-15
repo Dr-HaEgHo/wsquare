@@ -24,23 +24,21 @@ const WorkCard: FC<workCardProps> = ({
     const router = useRouter()
 
   return (
-    <div
-      style={{ flexDirection: number % 2 ? "row-reverse" : "row" }}
-      className="w-full flex items-center gap-[60px]"
+    <div className={`w-full flex items-center gap-10 lg:gap-[60px]  ${number % 2 ? "flex-col-reverse lg:flex-row-reverse" : "flex-col-reverse lg:flex-row"}`}
     >
-      <div className="w-[48%] parent max-h-500 overflow-hidden relative">
+      <div className="w-full md:w-[48%] parent max-h-500 overflow-hidden relative">
         <div className="child transition duration-300 absolute w-full h-full bg-black50 flex items-center justify-center opacity-0">
           <FilledButton
             text="View Project"
             image={require("@/assets/icons/arrow-diag.svg")}
-            btnClass="bg-primary !text-center !rounded-full flex-row-reverse gap-3 px-8 py-4"
+            btnClass="bg-primary hoverActive !text-center !rounded-full flex-row-reverse gap-3 px-8 py-4"
             pClass="font-medium text-xl"
             cta={() => { link && router.push(link)}}
           />
         </div>
         <Image src={image} alt="image" className="w-full" />
       </div>
-      <div className="w-[63%]">
+      <div className="w-full md:w-[63%]">
         <h3 className="text-4xl text-black font-medium lh120  flex gap-4 items-center">
           {title}
         </h3>

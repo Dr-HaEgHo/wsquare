@@ -16,7 +16,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "wsquare digital",
   description: "Powering the Technology Behind Your Business",
+  icons: {
+    icon: '/favicon.ico', // Path to your favicon in the public folder
+  },
 };
+
+// icons: {
+//   icon: [
+//     { rel: 'icon', sizes: '16x16', href: '/favicon-16x16.png' },
+//     { rel: 'icon', sizes: '32x32', href: '/favicon-32x32.png' },
+//     { rel: 'icon', href: '/favicon.ico' }, // Default favicon
+//   ],
+// },
 
 export default function RootLayout({
   children,
@@ -25,6 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body
         className={`antialiased`}
       >

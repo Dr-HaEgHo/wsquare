@@ -16,12 +16,12 @@ const points = [
 
 const WhoWeAre = () => {
   return (
-    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-[45px] bg-black">
-      <div className="w-full max-w-[1300px] mx-auto flex flex-col items-center text-center">
+    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-6 lg:px-[45px] bg-black">
+      <div className="w-full max-w-[1300px] mx-auto flex flex-col items-center">
         <h2 className="text-white text-5xl font-bold mb-16 text-center">
           About Us
         </h2>
-        <p className="w-full text-left text-2xl text-white font-medium lh120 mb-10">
+        <p className="w-full text-center lg:text-left text-2xl text-white font-medium lh120 mb-10">
           We are a dedicated team specializing in end-to-end digital product
           development, including web, iOS, and Android development, website
           design, prototyping, technical writing, and business analytics. Our
@@ -31,7 +31,7 @@ const WhoWeAre = () => {
 
         <div className="w-full flex flex-col gap-10 ">
           {points && points.map((point) => 
-          <div key={point.id} className="w-full border-l-2 border-primary text-left pl-10"> 
+          <div key={point.id} className="w-full border-l-2 border-primary text-left pl-4 lg:pl-10"> 
             <h4 className="text-[34px] text-primary font-semibold lh120 ls1pz mb-6">{point.top}</h4>
             <p className="text-2xl lh120 ls1pz text-white font-normal">{point.bottom}</p>
           </div>)}

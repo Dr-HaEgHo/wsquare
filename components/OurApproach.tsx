@@ -55,7 +55,7 @@ const points = [
 
 const OurApproach = () => {
   return (
-    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-[45px] bg-textGrey">
+    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-5 lg:px-[45px] bg-textGrey">
       <div className="w-full max-w-[1300px] mx-auto flex flex-col items-center text-center">
         <h2 className="text-black text-5xl font-bold mb-4 text-center">
           Our Approach

@@ -46,6 +46,10 @@ body {
   @apply w-[58px] h-[58px] flex items-center justify-center border-[0.5px] border-black rounded-full
 }
 
+.hoverActive{
+  @apply transition duration-200 hover:scale-[1.05] active:scale-100
+}
+
 .lh100{
   line-height: 100%;
 }
@@ -74,9 +78,8 @@ body {
   letter-spacing: 1%;
 }
 
-
-.card-parent{
-  
+.shad{
+  text-shadow: 1px 4px 5px orange;
 }
 
 .card-parent:hover .card-front{

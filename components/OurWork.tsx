@@ -34,7 +34,7 @@ const works = [
 
 const OurWork = () => {
   return (
-    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-[70px] bg-white">
+    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-6 lg:px-[70px] bg-white">
       <div className="w-full max-w-[1300px] mx-auto flex flex-col items-center text-center">
         <h2 className="text-black text-5xl font-bold mb-16 text-center">
           Some of Our Work

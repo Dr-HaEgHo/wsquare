@@ -13,8 +13,8 @@ const WWDCards : FC<WWDCardProps> = ({
     description
 }) => {
   return (
-    <div className='w-full aspect-[1.52] overflow-hidden rounded-[30px] flex items-center justify-center card-parent relative '>
-        <div className='bg-primary w-full h-full px-10 pt-[57px] top-[100%] absolute card-back pointer-events-none'>
+    <div className='w-full aspect-[1.18] lg:aspect-[1.82] xl:aspect-[1.52] overflow-hidden rounded-[30px] flex items-center justify-center card-parent relative '>
+        <div className='bg-primary w-full h-full px-[30px] 2xl:px-10 pt-[30px] xl:pt-[34px] 2xl:pt-[57px] top-[100%] absolute card-back pointer-events-none'>
             <p className='text-black text-lg font-medium lh151 text-left' >{description}</p>
         </div> 
 

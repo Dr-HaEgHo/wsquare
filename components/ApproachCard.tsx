@@ -15,11 +15,11 @@ const ApproachCard: FC<approachCardProps> = ({
   number,
 }) => {
   return (
-    <div style={{flexDirection: number % 2 ? "row" : "row-reverse",}} className="w-full flex items-center gap-20">
-      <div className="w-[31%]">
+    <div className={`w-full flex items-center gap-20 ${number % 2 ? "flex-col lg:flex-row" : "flex-col lg:flex-row-reverse"}`}>
+      <div className="w-full md:w-[31%] ">
         <Image src={image} alt="image" className="w-full" />
       </div>
-      <div className="w-[63%]">
+      <div className="w-full md:w-[63%]">
         <h3 className="text-4xl text-black font-medium lh120 mb-10 flex gap-4 items-center">
           <span className="text-primary">0{number}</span> {title}
         </h3>

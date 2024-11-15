@@ -43,10 +43,10 @@ const Testimonials = () => {
   const [swiperInstance, setSwiperInstance] = useState<any>();
 
   return (
-    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-[70px] bg-white">
+    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-8 lg:px-[70px] bg-white">
       <div className="w-full max-w-[1300px] mx-auto flex flex-col items-center text-center">
         <h2 className="text-black text-5xl font-bold mb-16 text-center">
-          Testimonials
+          Testimonial
         </h2>
 
         <div className="w-full flex flex-col gap-16 py-10">
@@ -79,9 +79,9 @@ const Testimonials = () => {
             </Swiper>
           </div>
 
-          <div className="flex gap-10 justify-center">
+          <div className="flex gap-4 lg:gap-10 justify-center">
             <button
-              className="nav-btn"
+              className="nav-btn hoverActive"
               onClick={() => swiperInstance?.slidePrev()}
             >
               <Image
@@ -90,7 +90,7 @@ const Testimonials = () => {
               />
             </button>
             <button
-              className="nav-btn"
+              className="nav-btn hoverActive"
               onClick={() => swiperInstance?.slideNext()}
             >
               <Image

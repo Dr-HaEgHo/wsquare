@@ -1,6 +1,7 @@
 import React from "react";
 import { FilledButton } from "./Button";
 import WWDCards from "./WWDCards";
+import { useRouter } from "next/navigation";
 
 
 const cards = [
@@ -13,14 +14,17 @@ const cards = [
 ]
 
 const WhatWeDo = () => {
+
+  const router  = useRouter();
+
   return (
-    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-[45px] bg-black">
+    <div className="relative w-full z-10 pt-[64px] pb-[64px] px-6 lg:px-[45px] bg-black">
       <div className="w-full max-w-[1350px] mx-auto flex flex-col items-center text-center">
         <h2 className="text-white text-5xl font-bold mb-4 text-center">
           What We Do
         </h2>
         <p className="cont960 text-xl text-white font-medium lh120 mb-16">Our team of skilled professionals and creative minds is committed to transforming your ideas into a live, fully functional digital product that not only meets but exceeds your expectations.</p>
-        <div className="w-full grid grid-cols-3 grid-rows-2 gap-12 mb-[64px]">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-12 mb-[64px]">
             {
                 cards && cards.map((card) => (
                     <WWDCards 
@@ -35,8 +39,9 @@ const WhatWeDo = () => {
         <FilledButton
             text="Contact"
             image={require("@/assets/icons/arrow-diag.svg")}
-            btnClass="bg-primary !text-center !rounded-full flex-row-reverse gap-3 px-8 py-4"
+            btnClass="bg-primary hoverActive !text-center !rounded-full flex-row-reverse gap-3 px-8 py-4"
             pClass="font-medium text-xl"
+            cta={() => router.push('#contact')}
           />
         
       </div>
