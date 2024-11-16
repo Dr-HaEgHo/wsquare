@@ -79,7 +79,6 @@ const Contact = () => {
       formData.email === "" ||
       formData.message === "" ||
       formData.name === "" ||
-      formData.phone === "" ||
       loading === true
     ){
       setIsDisabled(true)

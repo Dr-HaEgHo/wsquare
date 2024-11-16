@@ -18,16 +18,15 @@ export default function Home() {
 
   const [ openDrawer, setOpenDrawer ] = useState<boolean>(false)
 
-
   return (
     <main className="w-full">
-      <div className="transition duration-200 fixed z-[999] bottom-10 right-10 cursor-pointer transform hover:scale-[1.05] active:scale-100">
+      <a href={`https://wa.me/+447494954418`} target="_blank" className="transition duration-200 fixed z-[999] bottom-5 lg:bottom-10 right-5 lg:right-10 cursor-pointer shadow-lg rounded-full transform hover:scale-[1.05] active:scale-100">
         <Image
           src={require("@/assets/icons/whatsapp.svg")}
           alt="whatsapp"
           className="shad"
         />
-      </div>
+      </a>
       <div className={`${openDrawer ? '-top-[0%]' : '-top-[402px]'} transition duration-200 w-[90%] z-[999999] h-[400px] px-3 fixed left-1/2 transform -translate-x-1/2 flex flex-col gap-2 items-center justify-center border-[0.5px] border-grey1 border-t-0 rounded-br-3xl rounded-bl-3xl bg-black`}>
         { links && links.map((link) => (<Link href={`#${link.tagId}`} onClick={() => setOpenDrawer(false)} key={link.id} className="w-full text-black text-lg text-center py-2 rounded-full bg-primary cursor-pointer hover:opacity-90 active:opacity-80">{link.name}</Link>))}
         <button onClick={() => setOpenDrawer(false)} className="flex trnasition duration-200 mt-4 items-center justify-center hover:scale-[1.05] active:scale-100">

@@ -7,28 +7,32 @@ const works = [
     stack: ["REACT", "FIREBASE", "POSTGRES"],
     description:
       "A web application that helps users to find artisan in their city. It has a customer and artisan dashboard for managing bookings.  Developed with React, Firebase, Postgres.",
-    image: require("@/assets/images/Afrosme.png"),
+      image: require("@/assets/images/Afrosme.png"),
+    link: "https://www.afrosme.uk/",
   },
   {
     id: "MedRemind",
     stack: ["VUE.JS", "KOTLIN"],
     description:
       "Prescription and automated medication reminder software for pharmacies and clinics. Built with Vue.js, and Kotlin.",
-    image: require("@/assets/images/MedRemind.png"),
+      image: require("@/assets/images/MedRemind.png"),
+    link: "https://medremind.netlify.app/",
   },
   {
     id: "CyberVet",
     stack: ["REACT", "NODE", "POSTGRES"],
     description:
       "Full fledged veterinary hospital management and electronic medical record software. Built with React, Node, postgres.",
-    image: require("@/assets/images/CyberVet.png"),
+      image: require("@/assets/images/CyberVet.png"),
+    link: "",
   },
   {
     id: "Dim Analysis",
     stack: [],
     description:
       "Comprehensive dashboard for a four-year sales analysis featuring key metrics, seasonal revenue trends, and geographic distribution across continents and countries. Dashboard developed with PowerBI.",
-    image: require("@/assets/images/DimAnalysis.png"),
+      image: require("@/assets/images/DimAnalysis.png"),
+    link: "",
   },
 ];
 
@@ -50,6 +54,7 @@ const OurWork = () => {
                 description={work.description}
                 image={work.image}
                 stack={work.stack}
+                link={work.link}
               />
             ))}
         </div>

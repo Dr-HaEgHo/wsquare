@@ -1,9 +1,19 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { FilledButton } from "./Button";
+import { VolumeHigh, VolumeSlash } from "iconsax-react";
 
 const Hero = () => {
+  const videoRef = useRef<any | null>(null); // Reference to the video element
+  const [isMuted, setIsMuted] = useState<boolean>(true); // Mute state
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted; // Toggle the muted property
+      setIsMuted(!isMuted); // Update state
+    }
+  };
+
   return (
     <div className="w-full bg-black relative pt-[34px]">
       <div className="hidden lg:block w-full absolute top-0 left-0 z-0 ">
@@ -32,17 +42,38 @@ const Hero = () => {
             its size, stage, or industry, deserves a digital product that is
             perfectly tailored to its unique needs and goals.
           </p>
-          <FilledButton
-            text="Let's Chat"
-            image={require("@/assets/icons/arrow-diag.svg")}
-            btnClass="bg-primary hoverActive !text-center !rounded-full flex-row-reverse gap-3 px-8 py-4"
-            pClass="font-medium text-xl"
-          />
+          <a href="#contact">
+            <FilledButton
+              text="Let's Chat"
+              image={require("@/assets/icons/arrow-diag.svg")}
+              btnClass="bg-primary hoverActive !text-center !rounded-full flex-row-reverse gap-3 px-8 py-4"
+              pClass="font-medium text-xl"
+            />
+          </a>
         </div>
       </div>
 
       <div className="w-full pt-[60px] lg:pt-[34px] pb-[64px] px-5 lg:px-10 relative z-10">
-        <div className="w-full max-w-[1360px] mx-auto aspect-[2.72] min-h-[500px] bg-grey1"></div>
+        <div className="w-full max-w-[1360px] mx-auto aspect-[1.69] rounded-xl overflow-hidden bg-grey1 relative">
+          <button
+            onClick={toggleMute}
+            className="absolute bottom-2 lg:bottom-5 right-2 lg:right-5 bg-primary text-white h-12 w-12 flex items-center justify-center rounded-full shadow-lg hover:shadow-xl active:shadow-lg z-[999] hoverActive"
+          >
+            {isMuted ? (
+              <VolumeHigh size="32" color="#000" />
+            ) : (
+              <VolumeSlash size="32" color="#000" />
+            )}
+          </button>
+          <video
+            ref={videoRef}
+            src="/videos/showreel.mp4"
+            autoPlay={true}
+            muted
+            loop
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );

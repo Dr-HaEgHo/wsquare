@@ -26,9 +26,9 @@ const Navbar:FC<props> = ({
     <div className="cont940 z-[99999] absolute top-10 left-1/2 transform -translate-x-1/2">
      
       <div className="w-full border border-grey1 bg-transparent rounded-full py-3 flex items-center justify-between px-5 lg:px-10 shadow-lg shadow-black25 ">
-        <div className="w-[50px] h-[50px]">
+        <a href="/" className="w-[50px] h-[50px]">
           <Image src={require("@/assets/icons/Logo.png")} alt="site logo" />
-        </div>
+        </a>
         <ul className="hidden lg:flex h-full items-center gap-8">
           {links &&
             links.map((link) => (
