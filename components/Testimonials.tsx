@@ -10,33 +10,27 @@ import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
   {
-    id: "james1",
-    name: "James Brown",
-    titles: "Co-Founder and CEO of Company",
+    id: "jokotola",
+    name: "Dr Jokotola Priscilla",
+    titles: "Creative Director, Melange",
     testimony:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem.",
+      "It was a great pleasure working with the Wsquare Team and I couldn't be more impressed with my personal website and branding. From the initial planning stages to the final launch, they were professional, knowledgeable, and exceptionally responsive to my needs.",
   },
   {
-    id: "james2",
-    name: "James Brown",
-    titles: "Co-Founder and CEO of Company",
+    id: "peter",
+    name: "Peter Akinade",
+    titles: "CEO, ShinySolar",
     testimony:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem.",
+      "What stood out most while working with the Wsquare team was their dedication to delivering our software on time while maintaining clear communication throughout the process. Our app was user-friendly and highly functional with every feature working seamlessly as we envisioned. A big thumbs up to the team",
   },
   {
-    id: "james3",
-    name: "James Brown",
-    titles: "Co-Founder and CEO of Company",
+    id: "justina",
+    name: "Justina Oduyomi",
+    titles: "Co-Founder, CyberVet",
     testimony:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem.",
+      "I had the pleasure of working with Wsquare teaml to revamp our web app, and I cannot praise their team enough. From start to finish, their professionalism and expertise stood out. Despite the numerous iterations we required during the course of the project, they were always accommodating and committed to ensuring that our vision was brought to life.",
   },
-  {
-    id: "james4",
-    name: "James Brown",
-    titles: "Co-Founder and CEO of Company",
-    testimony:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem.",
-  },
+ 
 ];
 
 const Testimonials = () => {

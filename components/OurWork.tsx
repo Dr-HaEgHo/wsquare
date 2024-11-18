@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard";
 const works = [
   {
     id: "Afrosme",
-    stack: ["REACT", "FIREBASE", "POSTGRES"],
+    stack: ["REACT, NEXTJS and SUPERBASE"],
     description:
       "A web application that helps users to find artisan in their city. It has a customer and artisan dashboard for managing bookings.  Developed with React, Firebase, Postgres.",
       image: require("@/assets/images/Afrosme.png"),
@@ -12,7 +12,7 @@ const works = [
   },
   {
     id: "MedRemind",
-    stack: ["VUE.JS", "KOTLIN"],
+    stack: ["VUE.JS", "KOTLIN", 'POSTGRES'],
     description:
       "Prescription and automated medication reminder software for pharmacies and clinics. Built with Vue.js, and Kotlin.",
       image: require("@/assets/images/MedRemind.png"),
