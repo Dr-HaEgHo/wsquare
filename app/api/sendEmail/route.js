@@ -7,15 +7,15 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // or your email provider
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: 'wsquaredigital@gmail.com',
+        pass: 'bdid agzt nxce bmom',
       },
     });
 
     const mailOptions = {
       from: email,
-      // to: 'awogbuyitimothy@gmail.com', // the recipient's email address
-      to: 'team@wsquare.co.uk', // the recipient's email address
+      to: 'awogbuyitimothy@gmail.com', // the recipient's email address
+      // to: 'team@wsquare.co.uk', // the recipient's email address
       subject: `New message from ${name}`,
       text: message,
     };

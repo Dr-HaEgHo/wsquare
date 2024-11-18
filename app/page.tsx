@@ -19,8 +19,8 @@ export default function Home() {
   const [ openDrawer, setOpenDrawer ] = useState<boolean>(false)
 
   return (
-    <main className="w-full">
-      <a href={`https://wa.me/+447494954418`} target="_blank" className="transition duration-200 fixed z-[999] bottom-5 lg:bottom-10 right-5 lg:right-10 cursor-pointer shadow-lg rounded-full transform hover:scale-[1.05] active:scale-100">
+    <main className="w-full relative">
+      <a href={`https://wa.me/+447494954418`} target="_blank" className="transition duration-200 fixed !z-[9999999] bottom-5 lg:bottom-10 right-5 lg:right-10 cursor-pointer shadow-lg rounded-full transform hover:scale-[1.05] active:scale-100">
         <Image
           src={require("@/assets/icons/whatsapp.svg")}
           alt="whatsapp"
