@@ -53,8 +53,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full pt-[60px] lg:pt-[34px] pb-[64px] px-0 lg:px-10 relative z-10">
-        <div className="w-full max-w-[1360px] mx-auto aspect-[1.69] rounded-none lg:rounded-xl overflow-hidden bg-grey1 relative">
+      <div className="w-full pt-[60px] lg:pt-[34px] pb-[64px] px-0 relative z-10">
+        <div className="w-full mx-auto aspect-[1.69] rounded-none overflow-hidden bg-grey1 relative">
           <button
             onClick={toggleMute}
             className="absolute bottom-2 lg:bottom-5 right-2 lg:right-5 bg-primary text-white h-12 w-12 flex items-center justify-center rounded-full shadow-lg hover:shadow-xl active:shadow-lg z-[999] hoverActive"
