@@ -37,8 +37,8 @@ export async function POST(req) {
 
     const mailOptions = {
       from: email,
-      to: "awogbuyitimothy@gmail.com", // the recipient's email address
-      // to: 'team@wsquare.co.uk', // the recipient's email address
+      // to: "awogbuyitimothy@gmail.com", // the recipient's email address
+      to: 'team@wsquare.co.uk', // the recipient's email address
       subject: `New message from ${name}`,
       html: emailhtml,
     };
