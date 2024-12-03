@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+require('dotenv').config()
 
 export async function POST(req) {
   try {
@@ -7,8 +8,8 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: "gmail", // or your email provider
       auth: {
-        user: "wsquaredigital@gmail.com",
-        pass: "bdid agzt nxce bmom",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
@@ -36,8 +37,8 @@ export async function POST(req) {
 
     const mailOptions = {
       from: email,
-      // to: "awogbuyitimothy@gmail.com", // the recipient's email address
-      to: 'team@wsquare.co.uk', // the recipient's email address
+      to: "awogbuyitimothy@gmail.com", // the recipient's email address
+      // to: 'team@wsquare.co.uk', // the recipient's email address
       subject: `New message from ${name}`,
       html: emailhtml,
     };

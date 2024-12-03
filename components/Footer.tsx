@@ -9,7 +9,7 @@ const Footer = () => {
         alt="footer background"
         className="absolute z-0 w-full h-full object-cover top-0 left-0"
       />
-      <div className="py-8 w-full max-w-[1300px] mx-auto flex flex-col lg:flex-row items-start lg:items-center max-lg:gap-10 justify-between relative z-10">
+      <div className="py-8 w-full max-w-[1300px] mx-auto flex flex-col lg:flex-row items-start lg:items-start max-lg:gap-10 justify-between relative z-10">
         <div className="flex flex-col items-start justify-between gap-5">
           <p className="text-2xl text-black font-semibold lh151">Address</p>
           <p className="text-2xl text-black font-semibold lh151">
@@ -23,6 +23,9 @@ const Footer = () => {
           </p>
           <p className="text-2xl text-black font-semibold lh151">
             +447494954418
+          </p>
+          <p className="text-2xl text-black font-semibold lh151">
+            team@wsquare.co.uk
           </p>
         </div>
 
